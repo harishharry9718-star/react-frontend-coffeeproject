@@ -1,0 +1,52 @@
+
+#menu {
+    position: relative;
+    background: linear-gradient(rgba(73, 73, 73, 0.5), rgba(68, 68, 68, 0.4)), url(../../Assets/bg\ \(4\).jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    height: 350px;
+}
+
+#menu::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 15px;
+    left: 0;
+    z-index: 1;
+    bottom: -1px;
+    background: url(../../Assets/overlay-bottom.png);
+}
+
+.menu-content {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+}
+
+.menu-content h1{
+    text-transform: uppercase;
+    font-weight: 800;  
+    color: var(--secondary-clr);
+    backdrop-filter: blur(1.1px);
+    font-size: clamp(1.5rem, 6vw, 3rem);
+}
+
+.menu-content h2{
+    text-transform: capitalize;
+    font-weight:750;
+    font-size: clamp(19px, 4.5vw, 35px);
+}
+.menu-content h4{
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: clamp(15px, 4vw, 30px);
+}
+
+.menu-txt{
+    color:var(--primary-clr);
+    font-weight: bold;
+    font-size: clamp(19px,2.7vw,1.4rem);
+}
