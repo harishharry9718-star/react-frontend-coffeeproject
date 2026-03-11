@@ -10,8 +10,8 @@ const Footer = () => {
         <Row>
           <Col xs={12} sm={6} lg={3}>
             <h3>Get in touch</h3>
-            <p>20,Aarapalayam,Madurai</p>
-            <p>+91 987543210</p>
+            <p>20,chokikulam,Madurai</p>
+            <p>+91 8682906723</p>
             <p>coffee@gmail.com</p>
           </Col>
           <Col xs={12} sm={6} lg={3}>
