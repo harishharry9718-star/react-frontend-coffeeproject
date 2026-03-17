@@ -10,7 +10,7 @@ import Booking from './components/booking';
 import AdminDashboard from './pages/AdminDashboard';
 import AdminLoginReg from './pages/AdminLoginReg';
 import AdminAddMenu from './pages/AdminAddMenu';
-import MenuList from './pages/menu/menulist';
+import MenuList from "./pages/menu/menulist";
 import Checkout from './pages/cart/Checkout';
 import AdminOrders from './pages/AdminOrders';
 import Invoice from './pages/cart/Invoice';
