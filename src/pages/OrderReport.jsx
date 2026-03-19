@@ -13,7 +13,7 @@ export default function OrderReport() {
   const [totalRevenue, setTotalRevenue] = useState(0);
 
   useEffect(() => {
-    axios.get("http://localhost:8085/api/orders/all")
+    axios.get("http://coffee-backend-0pn1.onrender.com/api/orders/all")
       .then(res => {
         setOrders(res.data);
         setFiltered(res.data);

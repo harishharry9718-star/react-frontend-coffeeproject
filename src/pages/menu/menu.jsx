@@ -10,7 +10,7 @@ export default function Menu() {
   const [search, setSearch] = useState("");   // 🔍 search text
 
   useEffect(() => {
-    axios.get("http://localhost:8085/api/menu/all")
+    axios.get("http://coffee-backend-0pn1.onrender.com/api/menu/all")
       .then(res => setItems(res.data))
       .catch(() => console.log("error loading menu"));
   }, []);

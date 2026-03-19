@@ -10,7 +10,7 @@ export const ContextProvider = (props) => {
 
   // load menu items from backend
   useEffect(() => {
-    axios.get("http://localhost:8085/api/menu/all")
+    axios.get("http://coffee-backend-0pn1.onrender.com/api/menu/all")
       .then(res => setMenuItems(res.data))
       .catch(() => console.log("menu load error"));
   }, []);

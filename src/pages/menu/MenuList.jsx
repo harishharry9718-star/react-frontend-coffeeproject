@@ -11,7 +11,7 @@ export default function MenuList() {
   }, []);
 
   const loadMenu = () => {
-    axios.get("http://localhost:8085/api/menu/all")
+    axios.get("http://coffee-backend-0pn1.onrender.com/api/menu/all")
       .then(res => setItems(res.data))
       .catch(() => console.log("error loading menu"));
   };
@@ -19,13 +19,13 @@ export default function MenuList() {
   const deleteItem = (id) => {
     if (!window.confirm("Delete this menu item?")) return;
 
-    axios.delete(`http://localhost:8085/api/menu/${id}`)
+    axios.delete(`http://coffee-backend-0pn1.onrender.com/api/menu/${id}`)
       .then(() => loadMenu())
       .catch(() => alert("Delete failed"));
   };
 
   const updateItem = () => {
-    axios.put(`http://localhost:8085/api/menu/update/${editItem.id}`, editItem)
+    axios.put(`http://coffee-backend-0pn1.onrender.com/api/menu/update/${editItem.id}`, editItem)
       .then(() => {
         alert("Updated successfully");
         setEditItem(null);
