@@ -1,6 +1,6 @@
 import './App.css'
 import { ContextProvider } from './context/Context';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Navigation from './components/Navbar';
 import Home from './pages/Home';
 import Menu from "./pages/menu/menu";
