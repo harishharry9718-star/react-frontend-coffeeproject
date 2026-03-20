@@ -12,7 +12,7 @@ export default function OrderStatus() {
 
   useEffect(() => {
     axios
-      .get(`http://coffee-backend-0pn1.onrender.com/api/orders/status/${id}`)
+      .get(`https://coffee-backend-0pn1.onrender.com/api/orders/status/${id}`)
       .then(res => {
         setStatus(res.data);
         setLoading(false);

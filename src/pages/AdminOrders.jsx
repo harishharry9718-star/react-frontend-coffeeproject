@@ -8,14 +8,13 @@ export default function AdminOrders() {
   const [orders, setOrders] = useState([]);
 
   useEffect(() => {
-    axios.get("http://coffee-backend-0pn1.onrender.com/api/orders/all")
+    axios.get("https://coffee-backend-0pn1.onrender.com/api/orders/all")
       .then(res => setOrders(res.data))
       .catch(() => console.log("load orders error"));
   }, []);
 
   const updateStatus = (id, status) => {
-    axios.put(
-      `http://coffee-backend-0pn1.onrender.com/api/orders/status/${id}`,
+    axios.put(`https://coffee-backend-0pn1.onrender.com/api/orders/status/${id}`,
       `"${status}"`,
       { headers: { "Content-Type": "application/json" } }
     ).then(() => {

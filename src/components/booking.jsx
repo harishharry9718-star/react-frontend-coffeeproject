@@ -22,7 +22,7 @@ const Booking = () => {
       return;
     }
 
-    axios.post("http://coffee-backend-0pn1.onrender.com/api/bookings/save", booking)
+    axios.post("https://coffee-backend-0pn1.onrender.com/api/bookings/save", booking)
       .then(() => {
         alert("Booking saved successfully");
         navigate("/");

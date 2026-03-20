@@ -18,7 +18,7 @@ function Cart() {
   const [items, setItems] = useState([]);
 
 useEffect(() => {
-  axios.get("http://coffee-backend-0pn1.onrender.com/api/menu/all")
+  axios.get("https://coffee-backend-0pn1.onrender.com/api/menu/all")
     .then(res => setItems(res.data))
     .catch(() => console.log("error loading menu"));
 }, []);

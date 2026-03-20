@@ -33,7 +33,7 @@ const handlePlaceOrder = () => {
 
   };
 
-  axios.post("http://coffee-backend-0pn1.onrender.com/api/orders/place", order)
+  axios.post("https://coffee-backend-0pn1.onrender.com/api/orders/place", order)
     .then((res) => {
       const orderId = res.data.id;
       alert("Order placed successfully. order ID: " + orderId);

@@ -13,7 +13,7 @@ export default function AdminAddMenu() {
     e.preventDefault();
 
     try {
-      await axios.post("http://coffee-backend-0pn1.onrender.com/api/menu/add", {
+      await axios.post("https://coffee-backend-0pn1.onrender.com/api/menu/add", {
         name,
         price,
         imageUrl,
